@@ -1,0 +1,26 @@
+
+<div>
+    <div *ngIf="configLogoPiattaforma.pathLogo" class="row">
+        <div class="col-12">
+            <img [src]="configLogoPiattaforma.pathLogo" alt="" 
+            [width]="configLogoPiattaforma.width" 
+            [height]="configLogoPiattaforma.height">
+        </div>
+    </div>
+    <div class="row" *ngIf="!configLogoPiattaforma.pathLogo" >
+        <div class="col">
+            <h1>{{configNomePiattaforma.nome}}</h1>
+        </div>
+    </div>
+    
+</div>
+
+
+<div class="row">
+
+</div>
+
+
+<div *ngIf="isUtenteLoggato">
+    <corsi-menu></corsi-menu>
+</div>
