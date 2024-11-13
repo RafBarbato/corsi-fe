@@ -1,23 +1,55 @@
 
-<div>
-    <div *ngIf="configLogoPiattaforma.pathLogo" class="row">
-        <div class="col-12">
-            <img [src]="configLogoPiattaforma.pathLogo" alt="" 
-            [width]="configLogoPiattaforma.width" 
-            [height]="configLogoPiattaforma.height">
+<div *ngIf="!isUtenteLoggato">
+    <p-toast></p-toast>
+
+    <div>
+        <div *ngIf="configLogoPiattaforma.pathLogo" class="row">
+            <div class="col-12">
+                <img [src]="configLogoPiattaforma.pathLogo" alt="" 
+                [width]="configLogoPiattaforma.width" 
+                [height]="configLogoPiattaforma.height">
+            </div>
         </div>
-    </div>
-    <div class="row" *ngIf="!configLogoPiattaforma.pathLogo" >
-        <div class="col">
-            <h1>{{configNomePiattaforma.nome}}</h1>
+        <div class="row" *ngIf="!configLogoPiattaforma.pathLogo" >
+            <div class="col">
+                <h1>{{configNomePiattaforma.nome}}</h1>
+            </div>
         </div>
+        
     </div>
     
-</div>
 
 
-<div class="row">
+    
+    <form  [formGroup]="loginForm">
+        <div class="row mt-5 justify-content-center">
+            <div class="col-4 p-fluid">
+                <p-floatLabel>
+                    <input pInputText id="exampleInputEmail1" formControlName="username" />
+                    <label for="exampleInputEmail1">Username</label>
+                </p-floatLabel>
+            </div>
 
+        </div>
+
+        <div class="row mt-5 justify-content-center">
+            <div class="col-4 p-fluid ">
+                <p-floatLabel>
+                    <input type="password" pInputText id="exampleInputPassword1" formControlName="password" />
+                    <label for="exampleInputPassword1">Password</label>
+                </p-floatLabel>
+            </div>
+
+        </div>
+
+        <div class="row mt-5 justify-content-center">
+            <div class="col-1 p-fluid">
+                <button type="submit" (click)="login()" class="btn btn-primary">Login</button>
+            </div>
+        </div>
+
+
+    </form>
 </div>
 
 
