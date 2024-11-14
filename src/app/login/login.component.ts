@@ -71,8 +71,6 @@ export class LoginComponent {
 
   login(){
     if(this.loginForm.valid){
-      console.log(this.loginForm.valid);
-      console.log("1");
       this.isUtenteLoggato = true;
     }
     else {

@@ -3,6 +3,5 @@ import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
 
 export const routes: Routes = [
-    {path: 'login', component: LoginComponent},
-    {path: 'menu', component: MenuComponent}
+    {path: 'login', component: LoginComponent}
   ];

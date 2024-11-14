@@ -17,34 +17,28 @@
         </div>
         
     </div>
-    
 
 
     
-    <form  [formGroup]="loginForm">
-        <div class="row mt-5 justify-content-center">
-            <div class="col-4 p-fluid">
-                <p-floatLabel>
-                    <input pInputText id="exampleInputEmail1" formControlName="username" />
-                    <label for="exampleInputEmail1">Username</label>
-                </p-floatLabel>
-            </div>
+    <form [formGroup]="loginForm">
 
+        <div  class="justify-content-center grid mt-3">
+            <p-floatLabel class="col-4 justify-content-center grid">
+                <input pInputText id="exampleInputEmail1" formControlName="username" />
+                <label for="exampleInputEmail1">Username</label>
+            </p-floatLabel>
         </div>
 
-        <div class="row mt-5 justify-content-center">
-            <div class="col-4 p-fluid ">
-                <p-floatLabel>
-                    <input type="password" pInputText id="exampleInputPassword1" formControlName="password" />
-                    <label for="exampleInputPassword1">Password</label>
-                </p-floatLabel>
-            </div>
-
+        <div class="justify-content-center grid mt-3">
+            <p-floatLabel class="col-4 justify-content-center grid">
+                <input type="password" pInputText id="exampleInputPassword1" formControlName="password" />
+                <label for="exampleInputPassword1">Password</label>
+            </p-floatLabel>
         </div>
 
-        <div class="row mt-5 justify-content-center">
-            <div class="col-1 p-fluid">
-                <button type="submit" (click)="login()" class="btn btn-primary">Login</button>
+        <div class="justify-content-center grid mt-3">
+            <div class="col-3 justify-content-center grid">
+                <p-button label="LOGIN" type="submit" (click)="login()" class="btn btn-primary"></p-button>
             </div>
         </div>
 

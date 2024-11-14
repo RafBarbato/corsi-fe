@@ -8,6 +8,11 @@ import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import { InputTextModule } from 'primeng/inputtext';
 import { FloatLabelModule } from 'primeng/floatlabel';
+import { MenubarModule } from 'primeng/menubar';
+import { BadgeModule } from 'primeng/badge';
+import { AvatarModule } from 'primeng/avatar';
+import { RippleModule } from 'primeng/ripple';
+import { ButtonModule } from 'primeng/button';
 
 
 
@@ -19,7 +24,12 @@ import { FloatLabelModule } from 'primeng/floatlabel';
     ReactiveFormsModule,
     ToastModule,
     InputTextModule,
-    FloatLabelModule
+    FloatLabelModule,
+    MenubarModule,
+    AvatarModule,
+    BadgeModule,
+    RippleModule,
+    ButtonModule
   ],
   providers:[
     ConfigurazioneService,
@@ -31,7 +41,12 @@ import { FloatLabelModule } from 'primeng/floatlabel';
     ReactiveFormsModule,
     ToastModule,
     InputTextModule,
-    FloatLabelModule
+    FloatLabelModule,
+    MenubarModule,
+    AvatarModule,
+    BadgeModule,
+    RippleModule,
+    ButtonModule
   ]
 })
 export class SharedModule { }

@@ -1,11 +1,4 @@
-<nav ngbNav #nav="ngbNav" class="nav-pills" [ngClass]="{'flex-column': true}" [orientation]="orientation">
-    <div *ngFor="let m of menu">
-        <ng-container ngbNavItem>
-            <button ngbNavLink routerLink="/menu">{{m.nome}}</button>
-            <ng-template ngbNavContent>
-                
-            </ng-template>
-        </ng-container>
-    </div>
-</nav>
-<div [ngbNavOutlet]="nav" class="mt-2"></div>
+<div class="card">
+    <p-menubar [model]="items">
+    </p-menubar>
+</div>
