@@ -13,6 +13,10 @@ import { BadgeModule } from 'primeng/badge';
 import { AvatarModule } from 'primeng/avatar';
 import { RippleModule } from 'primeng/ripple';
 import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
+import { DataViewModule } from 'primeng/dataview';
+
+
 
 
 
@@ -29,7 +33,9 @@ import { ButtonModule } from 'primeng/button';
     AvatarModule,
     BadgeModule,
     RippleModule,
-    ButtonModule
+    ButtonModule,
+    CardModule,
+    DataViewModule
   ],
   providers:[
     ConfigurazioneService,
@@ -46,7 +52,9 @@ import { ButtonModule } from 'primeng/button';
     AvatarModule,
     BadgeModule,
     RippleModule,
-    ButtonModule
+    ButtonModule,
+    CardModule,
+    DataViewModule
   ]
 })
 export class SharedModule { }

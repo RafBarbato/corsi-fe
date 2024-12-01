@@ -25,7 +25,7 @@ export class LoginComponent {
   configLogoPiattaforma : any;
   configNomePiattaforma : any;
 
-  isUtenteLoggato = false;
+  isUtenteLoggato = true;
   loginErrorMessage = {header:"", detail: ""};
   
   
