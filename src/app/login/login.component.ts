@@ -5,6 +5,9 @@ import { forkJoin } from 'rxjs';
 import {FormGroup, FormControl} from '@angular/forms';
 import { Validators} from '@angular/forms';
 import { MessageService } from 'primeng/api';
+import { Router } from '@angular/router';
+
+
 
 import { SharedModule } from '../shared/shared.module';
 
@@ -25,14 +28,14 @@ export class LoginComponent {
   configLogoPiattaforma : any;
   configNomePiattaforma : any;
 
-  isUtenteLoggato = true;
+  isUtenteLoggato = false;
   loginErrorMessage = {header:"", detail: ""};
   
   
   
 
   constructor(private configurazioneService: ConfigurazioneService, 
-    private messageService: MessageService
+    private messageService: MessageService, private router: Router
   ) {}
 
   ngOnInit() {
@@ -72,6 +75,7 @@ export class LoginComponent {
   login(){
     if(this.loginForm.valid){
       this.isUtenteLoggato = true;
+      this.router.navigate(['/corsi']);
     }
     else {
       this.messageService.add({

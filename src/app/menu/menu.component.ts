@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { SharedModule } from '../shared/shared.module';
 import { NgbNavConfig, NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import { CommonModule } from '@angular/common';
 import { ConfigurazioneService } from '../configurazione.service';
 import { forkJoin } from 'rxjs';
 import { MenuItem } from 'primeng/api';
-import { SharedModule } from '../shared/shared.module';
+
 import { Router } from '@angular/router';
 
 
